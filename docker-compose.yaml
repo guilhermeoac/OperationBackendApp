@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  userservice:
+    container_name: userservice
+    build:
+      context: ./UserService
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    restart: always
+
+  operationservice:
+    container_name: operationservice
+    build:
+      context: ./OperationService
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"
+    restart: always
+
+  recordservice:
+    container_name: recordservice
+    build:
+      context: ./RecordService
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+    restart: always

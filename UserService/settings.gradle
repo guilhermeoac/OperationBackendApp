@@ -1,0 +1,12 @@
+rootProject.name = 'UserService'
+include 'application'
+include 'input-boundary'
+include 'repository'
+include 'output-boundary'
+include 'web'
+include 'usecase'
+include 'configuration'
+include 'entities'
+include 'operation-service'
+include 'record-service'
+
